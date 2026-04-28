@@ -1,0 +1,21 @@
+# Manuscripts & book content
+*.docx
+*.epub
+
+# Media & archives
+*.mp3
+*.mp4
+*.zip
+
+# PDFs (keep only if explicitly added)
+*.pdf
+
+# KDP/KPF upload packages
+**/KPF/
+**/*_KC
+**/*_KDP_KC
+
+# Root-level private docs
+Asphalt Saints.mp3
+Presentation - ASPHALT SAINTS.mp4
+files.zip
