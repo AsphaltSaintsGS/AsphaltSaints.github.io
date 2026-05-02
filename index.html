@@ -332,6 +332,66 @@ body {
 .book-buy:hover { background: #931515; }
 .book-buy svg { width: 16px; height: 16px; fill: currentColor; }
 
+/* HOOKS */
+.hooks-section { background: var(--black); }
+.hooks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+.hook-card {
+  padding: 56px 48px;
+  position: relative;
+  background: var(--deep);
+  transition: background 0.3s;
+}
+.hook-card:hover { background: #161616; }
+.hook-book-label {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+.hook-book1 .hook-book-label { color: #6a9fc0; }
+.hook-book2 .hook-book-label { color: var(--red); }
+.hook-blood .hook-book-label { color: #c8a84b; }
+.hook-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.hook-sub {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.hook-book1 .hook-sub { color: #6a9fc0; }
+.hook-book2 .hook-sub { color: var(--red); }
+.hook-blood .hook-sub { color: #c8a84b; }
+.hook-rule {
+  width: 40px;
+  height: 2px;
+  margin-bottom: 20px;
+}
+.hook-book1 .hook-rule { background: #6a9fc0; }
+.hook-book2 .hook-rule { background: var(--red); }
+.hook-blood .hook-rule { background: #c8a84b; }
+.hook-body {
+  color: var(--silver);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .hooks-grid { grid-template-columns: 1fr; }
+  .hook-card { padding: 40px 24px; }
+}
+
 /* NEWSLETTER */
 .newsletter-inner {
   max-width: 640px;
@@ -531,6 +591,57 @@ body {
             Buy on Amazon
           </a>
         </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE THE SERIES -->
+<section class="section hooks-section">
+  <div class="section-inner">
+    <p class="section-label">Story Moments</p>
+    <h2 class="section-title">INSIDE THE SERIES</h2>
+    <div class="hooks-grid">
+
+      <div class="hook-card hook-book1">
+        <span class="hook-book-label">Book One — Asphalt Saints</span>
+        <h3 class="hook-title">THEY FOUND A PIPELINE</h3>
+        <p class="hook-sub">BUILT INTO THE SYSTEM</p>
+        <div class="hook-rule"></div>
+        <p class="hook-body">Children routed through council databases using codes nobody questioned. Selected. Transferred. Delivered to country houses owned by trusts that led to a government committee. The people protecting children were supplying them.</p>
+      </div>
+
+      <div class="hook-card hook-book2">
+        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <h3 class="hook-title">THE GREY MAN</h3>
+        <p class="hook-sub">MANAGED IT ALL</p>
+        <div class="hook-rule"></div>
+        <p class="hook-body">Hargreaves. Thirty-five years in the shadows. He didn't touch the children — he moved the paperwork. Made witnesses disappear. Kept the machine running. A man who visited his dead wife's grave and felt nothing. Almost nothing.</p>
+      </div>
+
+      <div class="hook-card hook-book2">
+        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <h3 class="hook-title">A LEDGER</h3>
+        <p class="hook-sub">347 CHILDREN. 31 CODES.</p>
+        <div class="hook-rule"></div>
+        <p class="hook-body">Handwritten. Leather-bound. Eleven years of entries. Every child's name. Every client's code. Hidden in a safe in a house in Derbyshire. The Saints rode through the dark and took it.</p>
+      </div>
+
+      <div class="hook-card hook-book2">
+        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <h3 class="hook-title">BENEATH THE HOUSE</h3>
+        <p class="hook-sub">THEY FOUND SOMETHING WORSE</p>
+        <div class="hook-rule"></div>
+        <p class="hook-body">An altar with chains. An operating theatre. Vials of blood. Organs in fridges. They weren't just exploiting children. They were harvesting them. Eight unnamed clients. The ones nobody could touch.</p>
+      </div>
+
+      <div class="hook-card hook-book2 hook-blood">
+        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <h3 class="hook-title">THE SAINTS PAID</h3>
+        <p class="hook-sub">IN BLOOD</p>
+        <div class="hook-rule"></div>
+        <p class="hook-body">Gary Fenton. Thirty-one. A daughter called Sophie. He helped the Saints and they killed him for it. Made it look like suicide. 112 bikes lined the streets for his funeral. A six-year-old held a toy motorcycle and said: Daddy's friends.</p>
       </div>
 
     </div>
