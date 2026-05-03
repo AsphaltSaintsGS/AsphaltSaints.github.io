@@ -396,11 +396,20 @@ body {
 /* FOOTER COUNTER */
 .footer-counter {
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
 }
-.footer-counter img {
-  height: 22px;
-  opacity: 0.7;
+.counter-eye { font-size: 0.9rem; }
+#visitor-count {
+  color: var(--red);
+  font-size: 1.2rem;
 }
+.counter-label { color: var(--ash); }
 
 /* HOOKS */
 .hooks-section { background: var(--black); }
@@ -793,12 +802,24 @@ body {
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-counter">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsh4rkie1.github.io&count_bg=%23B01A1A&title_bg=%230a0a0a&icon=eye&icon_color=%23f0ede8&title=visitors&edge_flat=true" alt="Visitor count">
+    <span class="counter-eye">👁</span>
+    <span id="visitor-count">—</span>
+    <span class="counter-label">visitors</span>
   </div>
   <p>&copy; 2026 Gary Staniforth. All rights reserved.</p>
 </footer>
 
 <script>
+  // Visitor counter
+  fetch('https://api.countapi.xyz/hit/sh4rkie1.github.io/visits')
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('visitor-count').textContent = data.value.toLocaleString();
+    })
+    .catch(() => {
+      document.getElementById('visitor-count').textContent = '—';
+    });
+
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 40);
