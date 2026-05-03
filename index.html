@@ -811,10 +811,10 @@ body {
 
 <script>
   // Visitor counter
-  fetch('https://api.countapi.xyz/hit/sh4rkie1.github.io/visits')
+  fetch('https://api.counterapi.dev/v1/sh4rkie1-github-io/visits/up')
     .then(r => r.json())
     .then(data => {
-      document.getElementById('visitor-count').textContent = data.value.toLocaleString();
+      document.getElementById('visitor-count').textContent = Number(data.count).toLocaleString();
     })
     .catch(() => {
       document.getElementById('visitor-count').textContent = '—';
