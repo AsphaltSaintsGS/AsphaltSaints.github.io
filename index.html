@@ -471,6 +471,73 @@ body {
   .hook-card { padding: 40px 24px; }
 }
 
+/* REVIEWS */
+.reviews-summary {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.reviews-score {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--white);
+}
+.reviews-stars {
+  font-size: 1.8rem;
+  color: #e8a000;
+  letter-spacing: 4px;
+  margin: 4px 0 8px;
+}
+.reviews-meta {
+  color: var(--ash);
+  font-size: 0.9rem;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.review-card {
+  background: var(--charcoal);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s;
+}
+.review-card:hover { border-color: rgba(176,26,26,0.4); }
+.review-stars { color: #e8a000; font-size: 1rem; letter-spacing: 2px; }
+.review-4 { color: #b8860b; }
+.review-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: var(--white);
+}
+.review-body {
+  color: var(--silver);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  font-style: italic;
+  flex: 1;
+}
+.review-author {
+  font-size: 0.8rem;
+  color: var(--ash);
+  letter-spacing: 0.03em;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: auto;
+}
+@media (max-width: 900px) {
+  .reviews-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .reviews-grid { grid-template-columns: 1fr; }
+}
+
 /* NEWSLETTER */
 .newsletter-inner {
   max-width: 640px;
@@ -746,6 +813,74 @@ body {
         <p class="hook-body">Gary Fenton. Thirty-one. A daughter called Sophie. He helped the Saints and they killed him for it. Made it look like suicide. 112 bikes lined the streets for his funeral. A six-year-old held a toy motorcycle and said: Daddy's friends.</p>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section section-dark">
+  <div class="section-inner">
+    <p class="section-label">Amazon Reviews</p>
+    <h2 class="section-title">WHAT READERS SAY</h2>
+    <div class="reviews-summary">
+      <div class="reviews-score">4.8</div>
+      <div class="reviews-stars">★★★★★</div>
+      <div class="reviews-meta">out of 5 &nbsp;·&nbsp; 7 global ratings &nbsp;·&nbsp; Asphalt Saints: Saints Arrive Early</div>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <h4 class="review-title">A heartbreaking, heartwarming must have</h4>
+        <p class="review-body">"An absolutely gripping read. All emotions rolled into 1. From the heartbreaking tears, to the smiles of joy. Gary has used his memories, knowledge and fictional facts to show the world that people do care and how brotherhood isn't a bad thing. Can't wait for book 2."</p>
+        <p class="review-author">— Michelle Wardman &nbsp;·&nbsp; 16 April 2026</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <h4 class="review-title">A good biker read</h4>
+        <p class="review-body">"This is one of the best reads in a long time. Raw, true to life. Highly recommended."</p>
+        <p class="review-author">— Amanda Booth &nbsp;·&nbsp; Verified Purchase &nbsp;·&nbsp; 11 May 2026</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <h4 class="review-title">Gripping!</h4>
+        <p class="review-body">"Compelling read with believable characters and situations that will keep you gripped tightly to the end."</p>
+        <p class="review-author">— Simon Barton &nbsp;·&nbsp; Verified Purchase &nbsp;·&nbsp; 11 May 2026</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <h4 class="review-title">Best most absorbing book I've read!</h4>
+        <p class="review-body">"Absolutely AMAZING — so many highs and lows had me hooked from the 1st chapter. Can't recommend it enough, just ordered his 2nd book and can't wait to read it."</p>
+        <p class="review-author">— D &amp; Jo's Pythons &nbsp;·&nbsp; 10 May 2026</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <h4 class="review-title">Fantastic read</h4>
+        <p class="review-body">"This is one to buy for a great read! Gary Staniforth has put 100% effort into this British thriller. I could not put the book down! Highly recommend!!"</p>
+        <p class="review-author">— Michael Newsome &nbsp;·&nbsp; 10 May 2026</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <h4 class="review-title">Biker book review</h4>
+        <p class="review-body">"Fantastic read, gripping stuff. Look forward to the next one."</p>
+        <p class="review-author">— Biker book review &nbsp;·&nbsp; 11 May 2026</p>
+      </div>
+
+      <div class="review-card review-card-4star">
+        <div class="review-stars review-4">★★★★☆</div>
+        <h4 class="review-title">Riveting read, not to be missed</h4>
+        <p class="review-body">"This is a brilliant read based on true facts from someone who was caught up in the system. It was thrilling to read from beginning to end. This is an author to watch out for in the future."</p>
+        <p class="review-author">— Amazon Customer &nbsp;·&nbsp; 10 May 2026</p>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="https://www.amazon.co.uk/dp/B0GX2Y1N5B#customerReviews" target="_blank" rel="noopener" class="btn btn-outline">Read All Reviews on Amazon</a>
     </div>
   </div>
 </section>
