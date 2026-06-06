@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1 — Ripped Apart | Asphalt Saints by Gary Staniforth</title>
+<meta name="description" content="Read the opening chapter of Asphalt Saints by Gary Staniforth. The night Jack Lee was taken into care was the night his childhood ended.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #0a0a0a;
+  --deep: #111;
+  --charcoal: #1c1c1c;
+  --red: #b01a1a;
+  --red-dim: #7a1212;
+  --red-glow: rgba(176,26,26,0.15);
+  --white: #f0ede8;
+  --silver: #b8b8b8;
+  --ash: #777;
+  --border: rgba(240,237,232,0.08);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 0 40px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(10,10,10,0.97);
+  box-shadow: 0 1px 0 var(--border);
+}
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  color: var(--white);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--red); }
+.nav-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--silver);
+  text-decoration: none;
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.nav-back:hover { color: var(--white); }
+.nav-back svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* CHAPTER HEADER */
+.chapter-header {
+  padding: 120px 24px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.chapter-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 30%, var(--red-glow) 0%, transparent 70%);
+}
+.chapter-header-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+.chapter-eyebrow {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: var(--red);
+  margin-bottom: 20px;
+}
+.chapter-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.chapter-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  letter-spacing: 0.15em;
+  color: var(--red);
+  margin-bottom: 32px;
+}
+.chapter-rule {
+  width: 60px;
+  height: 2px;
+  background: var(--red);
+  margin: 0 auto 32px;
+}
+.chapter-hook {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--silver);
+  line-height: 1.6;
+}
+
+/* CHAPTER BODY */
+.chapter-body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
+.chapter-body p {
+  color: var(--silver);
+  font-size: 1.15rem;
+  line-height: 1.85;
+  margin-bottom: 28px;
+}
+.chapter-body p:first-child {
+  color: var(--white);
+  font-size: 1.25rem;
+}
+.chapter-body p strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* SECTION BREAK */
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 48px 0;
+  color: var(--red);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+}
+.section-break::before,
+.section-break::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* CTA */
+.chapter-cta {
+  border-top: 1px solid var(--border);
+  padding: 64px 24px 80px;
+  background: var(--deep);
+  text-align: center;
+}
+.chapter-cta-inner { max-width: 560px; margin: 0 auto; }
+.cta-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+.cta-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.cta-body {
+  color: var(--silver);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 2px;
+  margin: 0 8px 12px;
+}
+.btn-primary { background: var(--red); color: var(--white); border: 2px solid var(--red); }
+.btn-primary:hover { background: #931515; border-color: #931515; }
+.btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(240,237,232,0.4); }
+.btn-outline:hover { border-color: var(--white); }
+
+/* FOOTER */
+.footer {
+  padding: 32px 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  background: var(--black);
+}
+.footer p { color: var(--ash); font-size: 0.9rem; }
+.footer a { color: var(--silver); text-decoration: none; }
+.footer a:hover { color: var(--white); }
+
+@media (max-width: 640px) {
+  .nav { padding: 0 20px; }
+  .chapter-body { padding: 40px 20px 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">GARY <span>STANIFORTH</span></a>
+  <a href="index.html" class="nav-back">
+    <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+    Back to site
+  </a>
+</nav>
+
+<!-- CHAPTER HEADER -->
+<header class="chapter-header">
+  <div class="chapter-header-inner">
+    <p class="chapter-eyebrow">Asphalt Saints · Book One</p>
+    <h1 class="chapter-number">CHAPTER 1</h1>
+    <p class="chapter-title">RIPPED APART</p>
+    <div class="chapter-rule"></div>
+    <p class="chapter-hook">"The night Jack Lee was taken into care was the night his childhood ended."</p>
+  </div>
+</header>
+
+<!-- CHAPTER BODY -->
+<main class="chapter-body">
+
+  <p>The night Jack Lee was taken into care was the night his childhood ended.</p>
+
+  <p>He was nine years old and they came while he was asleep.</p>
+
+  <p>Not deeply under. He'd never slept deeply in that house, not with the bass thumping through the walls from number fourteen after midnight and the couple next door who argued until someone broke something or someone left. But far enough gone that the front door didn't wake him.</p>
+
+  <p>The boots did.</p>
+
+  <p>More than two pairs on the stairs, heavy and unhurried, moving like men who'd already decided what they were there for and had stopped being interested in anyone's reaction to it.</p>
+
+  <p>He sat up in the dark and listened.</p>
+
+  <p>Across the landing, Donna had gone still in the way she went still when something frightened her. The held breath, the body made small, waiting for the world to finish being loud. He knew her breathing the way he knew the sounds the estate made at night: the pub turning out at eleven, the foxes going through the bins on Wednesdays, the taxi engines idling on the corner. She was frightened. He got up.</p>
+
+  <p>The landing light was on. Three men at the top of the stairs. Two in plain professional clothing that said <em>this is official and it's already decided</em>. The third in a suit with a folder under his arm, wearing the face of a man trained to deliver terrible news without his expression changing.</p>
+
+  <p>His mother was behind them still in her checkout uniform, the name badge still pinned to her chest. She'd come straight from her shift, hadn't even been home when whatever had been set in motion had started moving. She was talking past sentences, the same words cycling over and breaking apart. <em>Please. He's a good lad. He's never. Please.</em></p>
+
+  <p>His father was at the bottom of the stairs.</p>
+
+  <p>Not speaking.</p>
+
+  <p>His father always had something to say. Loudly, and not always helpfully, but always something. Now he stood with one hand flat against the wall and his face doing nothing at all, and whatever fight was going to happen on these stairs tonight wasn't coming from him.</p>
+
+  <p>The man with the folder crouched down in front of Jack. Adults did this. Crouched down and softened their voices and used words like <em>safeguarding</em> and <em>protective placement</em>, as if the right vocabulary could make the thing they were doing feel different from what it was.</p>
+
+  <p>"Jack. My name is Mr Harris. Do you understand why we're here?"</p>
+
+  <p>Jack looked at him for a long moment.</p>
+
+  <p>"No," he said.</p>
+
+  <p>Which was a lie. He understood more than he was supposed to.</p>
+
+  <div class="section-break">✦</div>
+
+  <p>Chris started screaming when they moved Jack toward the stairs. He was seven years old and he did nothing by half-measures. He grabbed Jack's arm with both hands and screamed his name over and over, <em>Jack Jack Jack</em>, like a word said enough times becomes a spell that changes what's happening. His face was completely open in the way only very young children's faces can be open, nothing managed or performed, just the raw fact of something being taken that shouldn't be taken.</p>
+
+  <p>Jack heard it down the stairs and out into the street and through the car window as the men put him in the back seat. He turned and watched through the rear glass as his brother stood on the doorstep growing smaller, still reaching, both arms out.</p>
+
+  <p>The car turned left.</p>
+
+  <p>Chris disappeared.</p>
+
+  <p>In the hallway, in the moment before they moved him, Donna had stood with her doll pressed flat against her chest and her eyes wide and completely dry. She didn't cry. She didn't reach for him. She watched him go with the eyes of a girl who'd already learned that the things that happened in this family didn't always have reasons you could ask about.</p>
+
+  <p>Her eyes.</p>
+
+  <p>Not Chris's screaming.</p>
+
+  <p>That was the image that stayed with him. For years. For decades. The image that surfaced in the quiet.</p>
+
+  <div class="section-break">✦</div>
+
+  <p>They called it an approved school.</p>
+
+  <p>It was a borstal in all but the paperwork.</p>
+
+  <p>Derbyshire countryside behind a wall that was too high to ignore and too low to forget. The building smelled of industrial bleach and overcooked cabbage and the particular wet cold that settles into old stone in the north and never properly leaves. A smell that Jack would associate for the rest of his life with the removal of choice. Thirty-seven boys between nine and fifteen. Staff of fourteen, ranging from people genuinely trying to do right by a broken system to men who'd been given authority over children and had quietly decided to enjoy it.</p>
+
+  <p>The rules were absolute and arbitrary, which is the combination most effective at producing compliance, because absolute means they can't be argued with and arbitrary keeps you permanently uncertain. The bedside mat had to align exactly with the edge of the bed frame, not approximately, exactly, and the measurement was checked each morning by a senior boy who'd been given the role not because he was trustworthy but because he was useful. One inch out meant punishment. The slipper usually. A size thirteen, smooth from years of repetition, kept in Beardsley's office next to a framed photograph of the man at a cricket match.</p>
+
+  <p>One night someone whispered after lights out.</p>
+
+  <p>They made every boy stand outside barefoot in the rain for five hours. Fine Derbyshire rain, the persistent kind that doesn't look like much until you've been standing in it long enough that the cold has gone all the way up through your feet and into your shins.</p>
+
+  <p>Jack didn't cry.</p>
+
+  <p>He watched his breath disappear into the dark and worked out the thing that would govern him for the rest of his life.</p>
+
+  <p><strong>If they want you weak, give them silence.</strong></p>
+
+  <p>Not compliance. Not surrender. Silence. The controlled, deliberate use of saying nothing when saying something would give them what they needed to do more damage.</p>
+
+  <p>Sundays meant church. Six miles each way in all weathers, marching in lines past fields and dry stone walls and the indifferent Derbyshire sky. The priest spoke about redemption and the grace of suffering and the mercy of God. Jack counted cracks in the stonework above the altar and thought about whether Donna was eating properly, because she had particular requirements about food texture that took patience to accommodate and strangers didn't always have patience for her.</p>
+
+  <p>He didn't find God.</p>
+
+  <p>He found something harder and more durable.</p>
+
+  <div class="section-break">✦</div>
+
+  <p>He found it on a Thursday in February, six weeks after he arrived, when a boy called Michael — thirteen, small, who'd been there long enough to have stopped expecting anything but continued being surprised by it anyway — came back from Beardsley's office with his ear swollen shut and his eyes doing the thing eyes did when the person inside them had made a calculation about what was survivable and was revising the numbers downward.</p>
+
+  <p>Nobody spoke. That was the instruction, not given in words but absorbed through the walls, the way all the real instructions at that place were absorbed. You didn't speak. You didn't look. You filed it and you kept your mat aligned and you got through the next part.</p>
+
+  <p>Jack looked.</p>
+
+  <p>He looked at Michael for a long time. At the ear. At the eyes. At the specific quality of someone who had done nothing wrong and was absorbing the consequences of someone else's pleasure in being permitted to hurt them.</p>
+
+  <p>Then he looked at Beardsley, who was crossing back through the dormitory with the framed photograph expression. The face of a man so practised at what he did that it had stopped requiring any effort.</p>
+
+  <p>He looked at Beardsley for exactly long enough that Beardsley noticed.</p>
+
+  <p>"Something you want to say, Lee?"</p>
+
+  <p>Jack looked at him. Said nothing.</p>
+
+  <p>Beardsley held his gaze for three seconds. Then walked past.</p>
+
+  <p>The understanding that came from this was not about Michael. It was about the looking. About the difference between looking and speaking. Speaking gave them what they needed. A response, a hook, something they could pull on. Looking gave them nothing. And nothing, in this place, was the most powerful thing available.</p>
+
+  <p>The understanding that what they could govern was his body, his schedule, his mat alignment. Not what he decided to keep inside. He watched boys break, not from the beatings — though there were beatings, Beardsley's slipper being the approved mechanism and his fists being the unofficial one when the approved mechanism felt insufficient. They broke from the forgetting. From the slow, cold understanding that the world had filed them away and moved on without them, that the lives that had existed before the wall and the bleach and the mat alignments had learned to run perfectly well without them in it.</p>
+
+  <p>He decided, watching this, that he was not going to break.</p>
+
+  <p>He entered as a child.</p>
+
+  <p>He left as something the place had never intended to make.</p>
+
+  <p>He just didn't know yet what it was for.</p>
+
+</main>
+
+<!-- CTA -->
+<section class="chapter-cta">
+  <div class="chapter-cta-inner">
+    <p class="cta-label">The story continues</p>
+    <h2 class="cta-title">GET THE BOOK</h2>
+    <p class="cta-body">Jack Lee's story is only beginning. <em>Asphalt Saints</em> is available now on Amazon — paperback and Kindle.</p>
+    <a href="https://www.amazon.co.uk/dp/B0GX2Y1N5B" target="_blank" rel="noopener" class="btn btn-primary">Buy on Amazon</a>
+    <a href="index.html#newsletter" class="btn btn-outline">Join the Mailing List</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 Gary Staniforth. All rights reserved. &nbsp;·&nbsp; <a href="index.html">garystaniforth.com</a></p>
+</footer>
+
+</body>
+</html>
