@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gary Staniforth — Author</title>
-<meta name="description" content="Gary Staniforth — author of the Asphalt Saints series. Social entrepreneur, HGV driver, Harley rider. Writing from the streets for those written off.">
+<title>Gary Staniforth â Author</title>
+<meta name="description" content="Gary Staniforth â author of the Asphalt Saints series. Social entrepreneur, HGV driver, Harley rider. Writing from the streets for those written off.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -315,6 +315,12 @@ body {
   line-height: 1.65;
   margin-bottom: 24px;
 }
+.book-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .book-buy {
   display: inline-flex;
   align-items: center;
@@ -331,6 +337,21 @@ body {
 }
 .book-buy:hover { background: #931515; }
 .book-buy svg { width: 16px; height: 16px; fill: currentColor; }
+.book-read-ch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid var(--border);
+  color: var(--silver);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.book-read-ch:hover { border-color: var(--red); color: var(--white); }
 
 /* REVIEWS */
 .reviews-grid {
@@ -584,6 +605,20 @@ body {
 }
 .form-submit:hover { background: #931515; }
 .form-note { margin-top: 16px; font-size: 0.85rem; color: var(--ash); }
+.chapter-preview-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  color: var(--red);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.chapter-preview-link:hover { color: var(--white); }
+.chapter-preview-link svg { width: 16px; height: 16px; fill: currentColor; }
 
 /* SOCIAL */
 .social-grid {
@@ -662,7 +697,7 @@ body {
   <div class="hero-road"></div>
   <div class="hero-content">
     <img src="hero.jpg" alt="Gary Staniforth" class="hero-patch">
-    <p class="hero-eyebrow">Author · Social Entrepreneur · Road Warrior</p>
+    <p class="hero-eyebrow">Author Â· Social Entrepreneur Â· Road Warrior</p>
 
     <h1 class="hero-title">GARY<br>STANIFORTH</h1>
     <p class="hero-tagline">Writing from the streets. Speaking for those written off.</p>
@@ -680,14 +715,14 @@ body {
     <h2 class="section-title">GARY LEE<br>STANIFORTH</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>In 2008, Gary Staniforth walked out of a Salvation Army hostel in Bradford — homeless, battling addiction — and stood outside Bradford Council offices with a cardboard sign: <strong><em>"We are the hidden homeless. We are in every town and city. The government and councils can't hide us anymore. Give us equal housing rights."</em></strong> Not for a day. For <strong>six weeks. Nine in the morning until six at night. Every day. In all weathers.</strong> He didn't march. He didn't chant. He just refused to be invisible.</p>
-        <p>That stubborn, quiet act of presence became the foundation of <strong>Hidden Voices</strong> — the social enterprise that went on to transform the lives of more than 600 people across Bradford. Partnering with over 50 organisations, Gary built a movement rooted in a deceptively simple idea: people experiencing homelessness, addiction, and poverty aren't problems to be managed. They are people with stories worth telling.</p>
-        <p>Hidden Voices launched creative writing workshops, rap sessions, photography projects, and peer-led storytelling in hostels, day centres, and women's projects across Bradford. Participants wrote raw poetry, shared personal testimony, and saw their words become a magazine, a book — <em>Forgotten</em>, highly commended at the 2010 National Charity Awards — a short film, and bold billboard campaigns that asked uncomfortable questions of Bradford's commuters. By 2018, more than 600 individuals had passed through the programme.</p>
-        <p>Gary's lived experience — the Bradford hostels, the estates, the system that writes people off — was always going to find its way onto the page. His debut novel, <strong>Asphalt Saints</strong>, is set in the streets of Sheffield and follows Jack Lee: a man who arrives early when the system arrives late, who protects the vulnerable with a quiet, fierce tenacity drawn directly from Gary's own years on the front line. The sequel, <strong>The Grey Man</strong>, deepens that world — carrying the same gritty, street-level solidarity into territory where justice is personal and loyalty is everything.</p>
-        <p>Away from the page, Gary earns his living behind the wheel of an HGV out of Bradford and rides Harley-Davidson motorcycles — not as a hobby, but as an extension of a worldview. Self-reliance. The open road. The knowledge that the work is real and the load is yours to carry.</p>
+        <p>In 2008, Gary Staniforth walked out of a Salvation Army hostel in Bradford â homeless, battling addiction â and stood outside Bradford Council offices with a cardboard sign: <strong><em>"We are the hidden homeless. We are in every town and city. The government and councils can't hide us anymore. Give us equal housing rights."</em></strong> Not for a day. For <strong>six weeks. Nine in the morning until six at night. Every day. In all weathers.</strong> He didn't march. He didn't chant. He just refused to be invisible.</p>
+        <p>That stubborn, quiet act of presence became the foundation of <strong>Hidden Voices</strong> â the social enterprise that went on to transform the lives of more than 600 people across Bradford. Partnering with over 50 organisations, Gary built a movement rooted in a deceptively simple idea: people experiencing homelessness, addiction, and poverty aren't problems to be managed. They are people with stories worth telling.</p>
+        <p>Hidden Voices launched creative writing workshops, rap sessions, photography projects, and peer-led storytelling in hostels, day centres, and women's projects across Bradford. Participants wrote raw poetry, shared personal testimony, and saw their words become a magazine, a book â <em>Forgotten</em>, highly commended at the 2010 National Charity Awards â a short film, and bold billboard campaigns that asked uncomfortable questions of Bradford's commuters. By 2018, more than 600 individuals had passed through the programme.</p>
+        <p>Gary's lived experience â the Bradford hostels, the estates, the system that writes people off â was always going to find its way onto the page. His debut novel, <strong>Asphalt Saints</strong>, is set in the streets of Sheffield and follows Jack Lee: a man who arrives early when the system arrives late, who protects the vulnerable with a quiet, fierce tenacity drawn directly from Gary's own years on the front line. The sequel, <strong>The Grey Man</strong>, deepens that world â carrying the same gritty, street-level solidarity into territory where justice is personal and loyalty is everything.</p>
+        <p>Away from the page, Gary earns his living behind the wheel of an HGV out of Bradford and rides Harley-Davidson motorcycles â not as a hobby, but as an extension of a worldview. Self-reliance. The open road. The knowledge that the work is real and the load is yours to carry.</p>
         <!-- App creator removed at author's request -->
         <figure class="protest-photo">
-          <img src="protest.jpg" alt="Gary outside Bradford Council, 2008 — six weeks standing for the hidden homeless">
+          <img src="protest.jpg" alt="Gary outside Bradford Council, 2008 â six weeks standing for the hidden homeless">
           <figcaption>Bradford Council offices, 2008. Six weeks. Nine to six. Every day. In all weathers.</figcaption>
         </figure>
         <div class="about-tags">
@@ -716,13 +751,16 @@ body {
         <span class="book-badge">Book One</span>
         <img src="book one/Asphalt_Saints_KDP_Cover_FINAL.jpg" alt="Asphalt Saints" class="book-cover">
         <div class="book-body">
-          <p class="book-series">Asphalt Saints · Book 1</p>
+          <p class="book-series">Asphalt Saints Â· Book 1</p>
           <h3 class="book-title">ASPHALT SAINTS</h3>
-          <p class="book-synopsis">Jack Lee doesn't wait for the system to save people — he's been burned by it too many times. When children start disappearing from the Sheffield estates he knows too well, Jack moves through the shadows with a quiet, fierce tenacity that authority can't touch and paperwork can't slow down. Raw, street-level, and uncompromising.</p>
-          <a href="https://www.amazon.co.uk/dp/B0GX2Y1N5B" target="_blank" rel="noopener" class="book-buy">
-            <svg viewBox="0 0 24 24"><path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.76 0 1.45-.43 1.79-1.1l3.07-6.56c.52-1.12-.29-2.34-1.53-2.34h-5.03l.68-3.39c.1-.49-.03-1-.35-1.36L13.12 2.06zM3 9c-1.1 0-2 .9-2v8c0 1.1.9 2 2 2s2-.9 2-2v-8c0-1.1-.9-2-2-2z"/></svg>
-            Buy on Amazon
-          </a>
+          <p class="book-synopsis">Jack Lee doesn't wait for the system to save people â he's been burned by it too many times. When children start disappearing from the Sheffield estates he knows too well, Jack moves through the shadows with a quiet, fierce tenacity that authority can't touch and paperwork can't slow down. Raw, street-level, and uncompromising.</p>
+          <div class="book-actions">
+            <a href="https://www.amazon.co.uk/dp/B0GX2Y1N5B" target="_blank" rel="noopener" class="book-buy">
+              <svg viewBox="0 0 24 24"><path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.76 0 1.45-.43 1.79-1.1l3.07-6.56c.52-1.12-.29-2.34-1.53-2.34h-5.03l.68-3.39c.1-.49-.03-1-.35-1.36L13.12 2.06zM3 9c-1.1 0-2 .9-2v8c0 1.1.9 2 2 2s2-.9 2-2v-8c0-1.1-.9-2-2-2z"/></svg>
+              Buy on Amazon
+            </a>
+            <a href="chapter1.html" class="book-read-ch">Read Chapter 1</a>
+          </div>
         </div>
       </div>
 
@@ -730,13 +768,15 @@ body {
         <span class="book-badge">Book Two</span>
         <img src="book 2/asphalt_saints_book2_KINDLE_COVER.jpg" alt="The Grey Man" class="book-cover">
         <div class="book-body">
-          <p class="book-series">Asphalt Saints · Book 2</p>
+          <p class="book-series">Asphalt Saints Â· Book 2</p>
           <h3 class="book-title">THE GREY MAN</h3>
           <p class="book-synopsis">The world Jack Lee moves through doesn't forgive easily, and it doesn't forget. In The Grey Man, the same gritty, street-level solidarity that powered Book One deepens into territory where justice is personal, loyalty is everything, and the line between protector and predator is razor thin.</p>
-          <a href="https://www.amazon.co.uk/dp/B0GXSNF97D" target="_blank" rel="noopener" class="book-buy">
-            <svg viewBox="0 0 24 24"><path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.76 0 1.45-.43 1.79-1.1l3.07-6.56c.52-1.12-.29-2.34-1.53-2.34h-5.03l.68-3.39c.1-.49-.03-1-.35-1.36L13.12 2.06zM3 9c-1.1 0-2 .9-2v8c0 1.1.9 2 2 2s2-.9 2-2v-8c0-1.1-.9-2-2-2z"/></svg>
-            Buy on Amazon
-          </a>
+          <div class="book-actions">
+            <a href="https://www.amazon.co.uk/dp/B0GXSNF97D" target="_blank" rel="noopener" class="book-buy">
+              <svg viewBox="0 0 24 24"><path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.76 0 1.45-.43 1.79-1.1l3.07-6.56c.52-1.12-.29-2.34-1.53-2.34h-5.03l.68-3.39c.1-.49-.03-1-.35-1.36L13.12 2.06zM3 9c-1.1 0-2 .9-2v8c0 1.1.9 2 2 2s2-.9 2-2v-8c0-1.1-.9-2-2-2z"/></svg>
+              Buy on Amazon
+            </a>
+          </div>
         </div>
       </div>
 
@@ -752,7 +792,7 @@ body {
     <div class="hooks-grid">
 
       <div class="hook-card hook-book1">
-        <span class="hook-book-label">Book One — Asphalt Saints</span>
+        <span class="hook-book-label">Book One â Asphalt Saints</span>
         <h3 class="hook-title">THEY FOUND A PIPELINE</h3>
         <p class="hook-sub">BUILT INTO THE SYSTEM</p>
         <div class="hook-rule"></div>
@@ -760,15 +800,15 @@ body {
       </div>
 
       <div class="hook-card hook-book2">
-        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <span class="hook-book-label">Book Two â The Grey Man</span>
         <h3 class="hook-title">THE GREY MAN</h3>
         <p class="hook-sub">MANAGED IT ALL</p>
         <div class="hook-rule"></div>
-        <p class="hook-body">Hargreaves. Thirty-five years in the shadows. He didn't touch the children — he moved the paperwork. Made witnesses disappear. Kept the machine running. A man who visited his dead wife's grave and felt nothing. Almost nothing.</p>
+        <p class="hook-body">Hargreaves. Thirty-five years in the shadows. He didn't touch the children â he moved the paperwork. Made witnesses disappear. Kept the machine running. A man who visited his dead wife's grave and felt nothing. Almost nothing.</p>
       </div>
 
       <div class="hook-card hook-book2">
-        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <span class="hook-book-label">Book Two â The Grey Man</span>
         <h3 class="hook-title">A LEDGER</h3>
         <p class="hook-sub">347 CHILDREN. 31 CODES.</p>
         <div class="hook-rule"></div>
@@ -776,7 +816,7 @@ body {
       </div>
 
       <div class="hook-card hook-book2">
-        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <span class="hook-book-label">Book Two â The Grey Man</span>
         <h3 class="hook-title">BENEATH THE HOUSE</h3>
         <p class="hook-sub">THEY FOUND SOMETHING WORSE</p>
         <div class="hook-rule"></div>
@@ -784,7 +824,7 @@ body {
       </div>
 
       <div class="hook-card hook-book2 hook-blood">
-        <span class="hook-book-label">Book Two — The Grey Man</span>
+        <span class="hook-book-label">Book Two â The Grey Man</span>
         <h3 class="hook-title">THE SAINTS PAID</h3>
         <p class="hook-sub">IN BLOOD</p>
         <div class="hook-rule"></div>
@@ -802,58 +842,58 @@ body {
     <h2 class="section-title">WHAT READERS SAY</h2>
     <div class="reviews-summary">
       <div class="reviews-score">4.8</div>
-      <div class="reviews-stars">★★★★★</div>
-      <div class="reviews-meta">out of 5 &nbsp;·&nbsp; 7 global ratings &nbsp;·&nbsp; Asphalt Saints: Saints Arrive Early</div>
+      <div class="reviews-stars">âââââ</div>
+      <div class="reviews-meta">out of 5 &nbsp;Â·&nbsp; 7 global ratings &nbsp;Â·&nbsp; Asphalt Saints: Saints Arrive Early</div>
     </div>
     <div class="reviews-grid">
 
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars">âââââ</div>
         <h4 class="review-title">A heartbreaking, heartwarming must have</h4>
         <p class="review-body">"An absolutely gripping read. All emotions rolled into 1. From the heartbreaking tears, to the smiles of joy. Gary has used his memories, knowledge and fictional facts to show the world that people do care and how brotherhood isn't a bad thing. Can't wait for book 2."</p>
-        <p class="review-author">— Michelle Wardman &nbsp;·&nbsp; 16 April 2026</p>
+        <p class="review-author">â Michelle Wardman &nbsp;Â·&nbsp; 16 April 2026</p>
       </div>
 
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars">âââââ</div>
         <h4 class="review-title">A good biker read</h4>
         <p class="review-body">"This is one of the best reads in a long time. Raw, true to life. Highly recommended."</p>
-        <p class="review-author">— Amanda Booth &nbsp;·&nbsp; Verified Purchase &nbsp;·&nbsp; 11 May 2026</p>
+        <p class="review-author">â Amanda Booth &nbsp;Â·&nbsp; Verified Purchase &nbsp;Â·&nbsp; 11 May 2026</p>
       </div>
 
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars">âââââ</div>
         <h4 class="review-title">Gripping!</h4>
         <p class="review-body">"Compelling read with believable characters and situations that will keep you gripped tightly to the end."</p>
-        <p class="review-author">— Simon Barton &nbsp;·&nbsp; Verified Purchase &nbsp;·&nbsp; 11 May 2026</p>
+        <p class="review-author">â Simon Barton &nbsp;Â·&nbsp; Verified Purchase &nbsp;Â·&nbsp; 11 May 2026</p>
       </div>
 
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars">âââââ</div>
         <h4 class="review-title">Best most absorbing book I've read!</h4>
-        <p class="review-body">"Absolutely AMAZING — so many highs and lows had me hooked from the 1st chapter. Can't recommend it enough, just ordered his 2nd book and can't wait to read it."</p>
-        <p class="review-author">— D &amp; Jo's Pythons &nbsp;·&nbsp; 10 May 2026</p>
+        <p class="review-body">"Absolutely AMAZING â so many highs and lows had me hooked from the 1st chapter. Can't recommend it enough, just ordered his 2nd book and can't wait to read it."</p>
+        <p class="review-author">â D &amp; Jo's Pythons &nbsp;Â·&nbsp; 10 May 2026</p>
       </div>
 
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars">âââââ</div>
         <h4 class="review-title">Fantastic read</h4>
         <p class="review-body">"This is one to buy for a great read! Gary Staniforth has put 100% effort into this British thriller. I could not put the book down! Highly recommend!!"</p>
-        <p class="review-author">— Michael Newsome &nbsp;·&nbsp; 10 May 2026</p>
+        <p class="review-author">â Michael Newsome &nbsp;Â·&nbsp; 10 May 2026</p>
       </div>
 
       <div class="review-card">
-        <div class="review-stars">★★★★★</div>
+        <div class="review-stars">âââââ</div>
         <h4 class="review-title">Biker book review</h4>
         <p class="review-body">"Fantastic read, gripping stuff. Look forward to the next one."</p>
-        <p class="review-author">— Biker book review &nbsp;·&nbsp; 11 May 2026</p>
+        <p class="review-author">â Biker book review &nbsp;Â·&nbsp; 11 May 2026</p>
       </div>
 
       <div class="review-card review-card-4star">
-        <div class="review-stars review-4">★★★★☆</div>
+        <div class="review-stars review-4">âââââ</div>
         <h4 class="review-title">Riveting read, not to be missed</h4>
         <p class="review-body">"This is a brilliant read based on true facts from someone who was caught up in the system. It was thrilling to read from beginning to end. This is an author to watch out for in the future."</p>
-        <p class="review-author">— Amazon Customer &nbsp;·&nbsp; 10 May 2026</p>
+        <p class="review-author">â Amazon Customer &nbsp;Â·&nbsp; 10 May 2026</p>
       </div>
 
     </div>
@@ -870,7 +910,7 @@ body {
     <h2 class="section-title">JOIN THE LIST</h2>
     <p class="newsletter-desc">Sign up and get the opening chapter of Asphalt Saints Book 1. Plus information on Book 2 and be the first to hear about Book 3.</p>
     <form class="newsletter-form" action="https://formsubmit.co/staniforth1@hotmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New mailing list signup — Gary Staniforth">
+      <input type="hidden" name="_subject" value="New mailing list signup â Gary Staniforth">
       <input type="hidden" name="_next" value="https://asphaltsaintsgs.github.io/AsphaltSaints.github.io/#newsletter">
       <input type="hidden" name="_captcha" value="false">
       <input type="text" name="name" placeholder="Your name" class="form-field" required>
@@ -878,6 +918,10 @@ body {
       <button type="submit" class="form-submit">SIGN UP</button>
     </form>
     <p class="form-note">No spam, ever. Unsubscribe any time.</p>
+    <a href="chapter1.html" class="chapter-preview-link">
+      <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      Or read Chapter 1 free right now
+    </a>
   </div>
 </section>
 
@@ -890,7 +934,7 @@ body {
 
       <a href="https://www.tiktok.com/@midlife_guy" target="_blank" rel="noopener" class="social-link">
         <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-        TikTok · @midlife_guy
+        TikTok Â· @midlife_guy
       </a>
 
       <a href="https://www.facebook.com/gary.staniforth1/" target="_blank" rel="noopener" class="social-link">
@@ -900,12 +944,12 @@ body {
 
       <a href="https://x.com/staniforth1bfd" target="_blank" rel="noopener" class="social-link">
         <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        X · @staniforth1bfd
+        X Â· @staniforth1bfd
       </a>
 
       <a href="https://www.instagram.com/sh4rki1" target="_blank" rel="noopener" class="social-link">
         <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        Instagram · @sh4rki1
+        Instagram Â· @sh4rki1
       </a>
 
     </div>
@@ -915,8 +959,8 @@ body {
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-counter">
-    <span class="counter-eye">👁</span>
-    <span id="visitor-count">—</span>
+    <span class="counter-eye">ð</span>
+    <span id="visitor-count">â</span>
     <span class="counter-label">visitors</span>
   </div>
   <p>&copy; 2026 Gary Staniforth. All rights reserved.</p>
@@ -930,7 +974,7 @@ body {
       document.getElementById('visitor-count').textContent = Number(data.count).toLocaleString();
     })
     .catch(() => {
-      document.getElementById('visitor-count').textContent = '—';
+      document.getElementById('visitor-count').textContent = 'â';
     });
 
   const nav = document.getElementById('nav');
